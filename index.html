@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <style>
+        .font-lexend{
+            font-family: 'Lexend';
+        }
+    </style>
+    <title>Donate Bangladesh</title>
+</head>
+<body class="h-screen w-full font-lexend">
+    <header class="fixed w-full">
+        <nav class="flex flex-row justify-center items-center gap-[329px] bg-[#F9F7F3] p-9">
+            <button id="blog" class="rounded-lg bg-[#B4F461] text-xl font-semibold text-[#111111] px-8 h-[49px]">Blog</button>
+            <div class="flex justify-center items-center gap-4">
+                <img src="assets/logo.png" class="w-[30px]">
+                <p class="font-semibold text-[#111111] text-xl">Donate Bangladesh</p>
+            </div>
+            <div class="flex gap-2 flex-row justify-center items-center">
+                <img src="assets/coin.png" class="w-7">
+                <p class="text-xl font-medium text-[#111111] opacity-70" id="available-balance">5500</p>
+                <p class="text-xl font-medium text-[#111111] opacity-70">BDT</p>
+                
+            </div>
+        </nav>
+        <!-- Donation & History Button Container -->
+        <div class="mt-20 flex gap-4 justify-center items-center">
+            <button id="donation-btn" class="rounded-lg bg-[#B4F461] opacity-none text-[#111111] text-xl font-semibold  px-8 h-[49px]">Donation</button>
+            <button id="history-btn" class="rounded-lg bg-[#9e9d9d8c] opacity-40 text-[#000000] text-xl font-semibold  px-8 h-[49px]">History</button>
+
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <!-- JS -->
+    <script src="js/index.js"></script>
+     <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <style>
+        .font-lexend{
+            font-family: 'Lexend';
+        }
+    </style>
+    <title>Donate Bangladesh | Blog</title>
+</head>
+<body class="h-screen w-full font-lexend">
+    <header class="fixed w-full z-10 bg-[#F9F7F3]">
+        <nav class="flex flex-row justify-between items-center bg-[#F9F7F3] p-9 lg:mx-6">
+            <!-- Navbar Starts-->
+            <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7" />
+                  </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 flex flex-col gap-5 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <button id="home" class="rounded-lg bg-[#B4F461] text-xl font-semibold text-[#111111] px-8 h-[49px]">Home</button>
+                    <div class="gap-2 flex-row justify-center items-center flex">
+                        <img src="assets/coin.png" class="w-7">
+                        <p class="text-xl font-medium text-[#111111] opacity-70" id="available-balance">5500</p>
+                        <p class="text-xl font-medium text-[#111111] opacity-70">BDT</p>
+                    </div>
+                </ul>
+              </div>
+            <!-- Navbar Ends -->
+            <button id="home" class="rounded-lg bg-[#B4F461] lg:block hidden text-xl font-semibold text-[#111111] px-8 h-[49px]">Home</button>
+            <div class="flex justify-center items-center gap-4">
+                <img src="assets/logo.png" class="w-[30px]">
+                <p class="font-semibold text-[#111111] text-xl">Donate Bangladesh</p>
+            </div>
+            <div class="gap-2 flex-row justify-center items-center lg:flex hidden">
+                <img src="assets/coin.png" class="w-7">
+                <p class="text-xl font-medium text-[#111111] opacity-70" id="available-balance">5500</p>
+                <p class="text-xl font-medium text-[#111111] opacity-70">BDT</p>
+            </div>
+        </nav>
+    </header>
+    <main class="h-full z-0">
+        <div class="pt-[110px]">
+            <div class="lg:m-[70px] m-[20px]">
+                <div class="flex flex-row gap-2 items-center">
+                    <h1 class="text-[25px] lg:text-[30px] font-bold">Important FAQ</h1>
+                    <img src="https://img.clipart-library.com/2/clip-question-mark-gif/clip-question-mark-gif-1.gif" class="w-10 h-10">
+                </div>
+                <div class="mt-8 space-y-5 ">
+                    <div class="collapse collapse-plus bg-white border">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                        <div class="collapse-content">
+                          <p>The DOM is an application programming interface that represents the structure of an HTML page as a tree of objects that can be manipulated using scripting languages such as JavaScript, thereby enabling dynamic updates to content, structure, and styles.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-white border">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                        <div class="collapse-content">
+                          <p>The selection of elements is possible by methods such as document.getElementById(), document.querySelector(), document.getElementsByClassName(), or others through which a target could be made on any particular element in consideration to its ID, class, or any other attribute.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-white border">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why it is useful?</div>
+                        <div class="collapse-content">
+                          <p>Event delegation is where we attach an event listener to a parent element to handle events on its child elements. The beauty of this is that it greatly reduces the number of event listeners we need. Event delegation also means that even elements dynamically added later will respond to events.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-white border">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                        <div class="collapse-content">
+                          <p>In order to change the attributes of an element, we can use setAttribute(). Similarly, in order to change styles, one can play with the style property, for example: element.style.color = 'red', will change the color of the element.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <!-- JS -->
+     <script src="js/blog.js"></script>
+</body>
+</html>
