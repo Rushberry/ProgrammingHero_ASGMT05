@@ -1,5 +1,4 @@
 /** Donation & History Page */
-
 const donateHistory = document.getElementById('donate-history');
 const dateAndTime = Date();
 
