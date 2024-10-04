@@ -20,6 +20,9 @@
         :root:has(:is(.modal-open,.modal:target,.modal-toggle:checked + .modal,.modal[open])) {
             scrollbar-gutter: unset;
         }
+        input::-webkit-inner-spin-button{
+            display: none;
+        }
     </style>
     <title>Donate Bangladesh</title>
 </head>
@@ -84,7 +87,7 @@
                         </div>
                         <h2 class="text-[20px] font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p class="w-full font-light text-[16px] mb-2">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                        <input id="noakhali-donate-amount" type="text" class="p-[15px] rounded-[8px] border mb-2 placeholder:text-[16px] placeholder:font-light focus:outline-[#5a595927]" placeholder="Write Donation Amount">
+                        <input id="noakhali-donate-amount" type="number" class="p-[15px] rounded-[8px] border mb-2 placeholder:text-[16px] placeholder:font-light focus:outline-[#5a595927]" placeholder="Write Donation Amount">
                         <button id="noakhali-donate-btn" class="rounded-[8px] bg-[#B4F461] text-[20px] font-semibold px-8 py-3">Donate Now</button>
                     </div>
                 </div>
@@ -100,7 +103,7 @@
                         </div>
                         <h2 class="text-[20px] font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <p class="w-full font-light text-[16px] mb-2">The recent floods in Feni have severely disrupted local communities. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies. Together, we can offer critical support and rebuild lives after this disaster. Every contribution counts. Please consider donating today to assist those in need.</p>
-                        <input id="feni-donate-amount" type="text" class="p-[15px] rounded-[8px] border mb-2 placeholder:text-[16px] placeholder:font-light focus:outline-[#5a595927]" placeholder="Write Donation Amount">
+                        <input id="feni-donate-amount" type="number" class="p-[15px] rounded-[8px] border mb-2 placeholder:text-[16px] placeholder:font-light focus:outline-[#5a595927]" placeholder="Write Donation Amount">
                         <button id="feni-donate-btn" class="rounded-[8px] bg-[#B4F461] text-[20px] font-semibold px-8 py-3">Donate Now</button>
                     </div>
                 </div>
@@ -116,7 +119,7 @@
                         </div>
                         <h2 class="text-[20px] font-bold">Aid for Injured in the Quota Movement</h2>
                         <p class="w-full font-light text-[16px] mb-2">The recent Quota movement has caused significant injuries and hardship. Your donation will provide medical care, rehabilitation, and essential supplies to those affected. Together, we can offer crucial support to help them recover. Every contribution counts. Please consider donating today to assist those in need.</p>
-                        <input id="quota-donate-amount" type="text" class="p-[15px] rounded-[8px] border mb-2 placeholder:text-[16px] placeholder:font-light focus:outline-[#5a595927]" placeholder="Write Donation Amount">
+                        <input id="quota-donate-amount" type="number" class="p-[15px] rounded-[8px] border mb-2 placeholder:text-[16px] placeholder:font-light focus:outline-[#5a595927]" placeholder="Write Donation Amount">
                         <button id="quota-donate-btn" class="rounded-[8px] bg-[#B4F461] text-[20px] font-semibold px-8 py-3">Donate Now</button>
                     </div>
                 </div>
@@ -133,7 +136,7 @@
                   <div class="modal-action flex justify-center">
                     <form method="dialog">
                       <button class="btn">Close Confirmation</button>
-                    </form>
+                    </form>   
                   </div>
                 </div>
               </dialog>
